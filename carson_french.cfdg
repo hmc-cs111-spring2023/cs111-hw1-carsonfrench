@@ -1,0 +1,47 @@
+startshape Snowman
+
+shape Snowman
+{
+    Head[]
+    Eye[ x -1 y 0.5]
+    Eye[x 1 y 0.5]
+    Nose[y -0.5]
+    Mouth[x -0.75 y -1.5 s 0.5]
+    Hat [y 2.2 x -1.5]
+    Head[s 1.5 y -4]
+    Head[s 2 y -8]
+}
+
+shape Head
+{
+    CIRCLE[s 5]
+    CIRCLE[s 4.95 b 1]
+
+}
+
+shape Eye
+{ 
+    CIRCLE[]
+    CIRCLE[s 0.97 b 1]
+    CIRCLE[s 0.5]
+}
+
+shape Nose
+{
+	SQUARE []
+	Nose [[ x 0.1 s 0.97 ]]
+}
+
+shape Mouth
+{
+    SQUARE []
+    SQUARE [x 1]
+    SQUARE [x 2]
+    SQUARE [x 3]
+}
+
+shape Hat
+{
+    Mouth[]
+    SQUARE[s 2 y 1.5 x 1.5]
+}
